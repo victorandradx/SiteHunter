@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)file:///C:/Users/victo/AppData/Local/Temp/opencode-browser-6wWxTh/0/sitehunter.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SiteHunter — Ache comércios sem site e venda hoje</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#0a0a0a;line-height:1.55}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.top{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e5e5;z-index:10}.topin{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:900;font-size:18px;cursor:pointer;display:flex;align-items:center}.logo b{background:#000;color:#fff;border-radius:8px;width:32px;height:32px;display:inline-grid;place-items:center;margin-right:8px}
+nav{display:flex;gap:14px;font-size:13.5px}nav a{color:#525252;cursor:pointer}nav a:hover{color:#000;font-weight:700}
+.btn{display:inline-block;border:1px solid #000;border-radius:99px;padding:11px 22px;font-weight:700;font-size:14px;cursor:pointer;background:#000;color:#fff}
+.btn.inv{background:#fff;color:#000}.btn.g{background:#fff;color:#000;border-color:#d4d4d4}
+.pill{display:inline-block;border:1px solid #e5e5e5;background:#fafafa;border-radius:99px;padding:6px 12px;font-size:13px;font-weight:700}
+.hero{text-align:center;padding:60px 20px 20px;background:linear-gradient(#f4f4f4,#fff)}.hero h1{font-size:clamp(32px,5.5vw,58px);letter-spacing:-2px;line-height:1.05}.hero h1 em{font-style:normal;background:#000;color:#fff;padding:0 10px;border-radius:8px}.hero p{color:#525252;max-width:620px;margin:14px auto}
+.box{background:#fff;border:1px solid #e5e5e5;border-radius:14px;padding:14px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.search{max-width:660px;margin:22px auto;display:flex;gap:8px;flex-wrap:wrap}.search input,.search select{flex:1;min-width:150px;border:1px solid #e5e5e5;background:#fafafa;border-radius:10px;padding:12px;font-size:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.card{border:1px solid #e5e5e5;border-radius:14px;padding:22px;background:#fff}.card h3{margin:10px 0 6px}.card p{font-size:14px;color:#525252}.n{width:32px;height:32px;background:#000;color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:800}
+.sec{padding:60px 20px}.gray{background:#fafafa;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5}.h2{font-size:clamp(26px,4vw,38px);letter-spacing:-1px}.lead{color:#525252;margin-top:8px}
+.leads{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;margin-top:16px}.lc{border:1px solid #e5e5e5;border-radius:14px;overflow:hidden;background:#fff}.minimap{width:100%;height:150px;border:0;filter:grayscale(1);display:block}.lb{padding:14px;font-size:14px}.lb small{color:#737373}.row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:12px}th{text-align:left;font-size:11px;text-transform:uppercase;color:#737373;border-bottom:1px solid #e5e5e5;padding:8px}td{padding:10px 8px;border-bottom:1px solid #f4f4f4}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;place-items:center;padding:16px;z-index:50}.modal.show{display:grid}.mbox{background:#fff;border-radius:16px;max-width:620px;width:100%;max-height:90vh;overflow:auto;padding:22px}
+.msg{background:#f4f4f4;border:1px solid #e5e5e5;border-radius:10px;padding:10px;font-size:13.5px;margin:8px 0}
+.mapframe{width:100%;height:230px;border:1px solid #e5e5e5;border-radius:10px;filter:grayscale(1);margin-top:10px}
+.field{width:100%;border:1px solid #e5e5e5;border-radius:10px;padding:12px;font-size:14px;margin-top:8px}
+.paygrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px;align-items:start}.receipt{background:#0a0a0a;color:#fff;border-radius:14px;padding:24px}
+.faq button{width:100%;text-align:left;background:#fff;border:1px solid #e5e5e5;border-radius:10px;padding:14px;font-weight:700;margin-top:8px;cursor:pointer;font-size:14px}.faq div{display:none;padding:10px 4px;color:#525252;font-size:14px}
+.foot{border-top:1px solid #e5e5e5;padding:36px 20px;font-size:13px;color:#737373}.cta{background:#000;color:#fff;border-radius:20px;padding:54px 24px;text-align:center}.cta p{color:#a3a3a3}
+input,select,textarea{font-size:14px}textarea{width:100%;border:1px solid #e5e5e5;border-radius:10px;padding:10px}
+.view{display:none}.view.on{display:block}
+@media(max-width:800px){.grid3,.paygrid{grid-template-columns:1fr}nav{display:none}}
+</style></head><body>
+<div class="top"><div class="wrap topin">
+<div class="logo" onclick="go('home')"><b><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="12" cy="12" r="7.5"></circle><path d="M12 1v4.2M12 18.8V23M1 12h4.2M18.8 12H23"></path><circle cx="12" cy="12" r="1.4" fill="#fff" stroke="none"></circle><circle cx="12" cy="8.7" r="0.7" fill="#fff" stroke="none"></circle><circle cx="12" cy="15.3" r="0.7" fill="#fff" stroke="none"></circle><circle cx="8.7" cy="12" r="0.7" fill="#fff" stroke="none"></circle><circle cx="15.3" cy="12" r="0.7" fill="#fff" stroke="none"></circle></svg></b>SiteHunter</div>
+<nav><a onclick="go('home')">Inicio</a><a onclick="go('dash')">Dashboard</a><a onclick="go('precos')">Precos</a><a onclick="go('tut')">Tutoriais</a><a onclick="go('ajuda')">Ajuda</a><a onclick="go('admin')">Admin</a></nav>
+<div><span class="pill"><span id="credits">97</span> creditos</span> <button class="btn" style="padding:8px 16px" onclick="go('assinar')">Assinar</button></div>
+</div></div>
+<div id="v-home" class="view on">
+<div class="hero"><div class="wrap">
+<span class="pill">Comercio sem site e cliente esperando</span>
+<h1>Voce ja sabe fazer site. <em>O dificil e achar quem paga.</em></h1>
+<p>Achamos os comercios sem site da sua cidade e entregamos a pagina de cada um pronta, com telefone e fotos reais. <b>Voce manda o link e cobra.</b></p>
+<div class="box search"><input id="h-cidade" value="Sao Paulo-SP"><select id="h-ramo"><option>Padaria</option><option>Barbearia</option><option>Pizzaria</option><option>Salao de Beleza</option><option>Pet Shop</option><option>Restaurante</option></select><button class="btn" onclick="buscarHome()">Ver agora</button></div>
+<p style="font-size:13px;color:#737373">Gratis e sem cadastro. Exemplos: Aracaju, Belo Horizonte, Botucatu, Americana</p>
+</div></div>
+<div class="sec gray"><div class="wrap">
+<h2 class="h2">Construa e lance sites em minutos.</h2>
+<div class="grid3">
+<div class="card"><div class="n">1</div><h3>Busque uma regiao</h3><p>Digite cidade, bairro ou endereco. Listamos os comercios sem site.</p></div>
+<div class="card"><div class="n">2</div><h3>Gere e edite o site</h3><p>A pagina sai pronta com nome, endereco e telefone. Edite textos, fotos e cores.</p></div>
+<div class="card"><div class="n">3</div><h3>Ofereca e receba</h3><p>Ligue pelo telefone listado, mostre o site pronto e feche a venda.</p></div>
+</div><br><button class="btn" onclick="go('dash')">Comecar agora</button>
+</div></div>
+<div class="sec"><div class="wrap">
+<span class="pill">Recursos da agencia</span><h2 class="h2">Tudo para rodar uma agencia web.</h2>
+<div class="grid3">
+<div class="card"><h3>Preview do site</h3><p>Link publico proprio para mostrar ao dono antes de fechar.</p></div>
+<div class="card"><h3>Busca de leads</h3><p>Regiao + ramo com mini-mapa, telefone, nota e avaliacoes. 100% gratis.</p></div>
+<div class="card"><h3>Editor simples</h3><p>Textos, fotos e cores em preto e branco, sem codigo.</p></div>
+<div class="card"><h3>Creditos mensais</h3><p>3 por busca, 3 por site, 1 por edicao. Sem surpresa.</p></div>
+<div class="card"><h3>Telefone destacado</h3><p>Contato pronto na pagina para ligar na hora.</p></div>
+<div class="card"><h3>Oportunidades do dia</h3><p>Lista sorteada so para sua conta.</p></div>
+</div></div></div>
+<div class="sec"><div class="wrap"><div class="cta"><h2 class="h2">Tem comercio sem site na sua rua agora mesmo.</h2><p>A primeira pagina fica pronta antes de acabar o cafe.</p><br><button class="btn inv" onclick="go('dash')">Construir meu 1o site</button></div></div></div>
+</div>
+<div id="v-dash" class="view"><div class="sec"><div class="wrap">
+<h2 class="h2">Dashboard - encontrar comercios</h2><p class="lead" id="planline">Plano atual: <b>nenhum - demo gratis</b> - Busca (3) - Site (3) - Edicao (1) - Oportunidades (5).</p>
+<div class="box search" style="max-width:none;margin-top:16px"><input id="cidade" value="Sao Paulo-SP"><select id="ramo"><option>Padaria</option><option>Barbearia</option><option>Pizzaria</option><option>Salao de Beleza</option><option>Pet Shop</option><option>Restaurante</option></select><button class="btn" onclick="buscar()">Buscar leads</button><button class="btn g" onclick="oportunidades()">Oportunidades do dia</button></div>
+<div id="leads" class="leads"><p style="color:#737373">Busque uma cidade para ver os comercios sem site.</p></div>
+<div class="grid3">
+<div class="card"><h3>Meus sites</h3><div id="sites"><p style="color:#737373;font-size:14px">Nenhum site ainda.</p></div></div>
+<div class="card"><h3>Financeiro</h3><input id="v-desc" placeholder="Ex: Site Padaria do Ze" style="width:100%;border:1px solid #e5e5e5;border-radius:8px;padding:9px"><input id="v-valor" type="number" value="497" style="width:100%;border:1px solid #e5e5e5;border-radius:8px;padding:9px;margin-top:8px"><button class="btn" style="margin-top:8px" onclick="addVenda()">Registrar venda</button><div id="vendas"><table><tbody><tr><th>Descricao</th><th>Valor</th></tr></tbody></table><p><b>Total: R$ 0</b></p></div></div>
+<div class="card"><h3>Como vender</h3><p>1. Busque a cidade.<br>2. Abra a ficha e copie a mensagem.<br>3. Gere o site e mande o preview.<br>4. Ligue e cobre R$ 300 a R$ 1.500.</p></div>
+</div>
+</div></div></div>
+<div id="v-precos" class="view"><div class="sec"><div class="wrap" style="text-align:center">
+<h2 class="h2">Um plano pra cada ritmo de vendas.</h2><p class="lead" style="margin:8px auto">Entrada R$ 119/mes - um site a R$ 400 cobre 3 meses.</p>
+<div class="grid3" style="text-align:left;margin-top:28px">
+<div class="card"><h3>Inicio</h3><div style="font-size:36px;font-weight:900">R$ 119<span style="font-size:14px;color:#737373">/mes</span></div><p>100 creditos - 15 buscas - oportunidades 5 dias - link publico - edicao com IA</p><br><button class="btn" onclick="escolherPlano('Inicio')">Comecar no Inicio</button></div>
+<div class="card" style="background:#000;color:#fff"><h3>Escala</h3><div style="font-size:36px;font-weight:900">R$ 239<span style="font-size:14px;color:#a3a3a3">/mes</span></div><p style="color:#d4d4d4">250 creditos - 40 buscas - oportunidades 20 dias - sem marca - multi-cidades</p><br><button class="btn inv" onclick="escolherPlano('Escala')">Comecar no Escala</button></div>
+<div class="card"><h3>Agencia</h3><div style="font-size:36px;font-weight:900">R$ 574<span style="font-size:14px;color:#737373">/mes</span></div><p>600 creditos - buscas ilimitadas - todo dia - dominio proprio + hospedagem</p><br><button class="btn" onclick="escolherPlano('Agencia')">Comecar no Agencia</button></div>
+</div></div></div></div>
+<div id="v-assinar" class="view"><div class="sec"><div class="wrap">
+<h2 class="h2">Assinar o SiteHunter</h2><p class="lead">Pagamento por Pix ou cartao. Demo: aprova na hora. Producao: conectar Mercado Pago ou Stripe.</p>
+<div class="paygrid">
+<div class="card"><h3>Seus dados</h3>
+<select id="p-plano" class="field" onchange="updAssinar()"><option>Inicio - R$ 119/mes</option><option>Escala - R$ 239/mes</option><option>Agencia - R$ 574/mes</option></select>
+<input id="p-nome" class="field" placeholder="Nome completo">
+<input id="p-email" class="field" placeholder="E-mail">
+<select id="p-metodo" class="field" onchange="updAssinar()"><option>Pix</option><option>Cartao de credito</option></select>
+<input id="p-cartao" class="field" placeholder="Numero do cartao (demo: qualquer numero)">
+<div class="row"><button class="btn" onclick="pagar()">Pagar agora</button></div>
+<p style="font-size:12px;color:#737373;margin-top:8px">Cancele quando quiser. Demo: nenhum valor real e cobrado.</p></div>
+<div><div class="card" id="subbox"></div><div id="receipt"></div></div>
+</div>
+</div></div></div>
+<div id="v-admin" class="view"><div class="sec"><div class="wrap" style="max-width:900px">
+<h2 class="h2">Area do admin</h2><p class="lead">Acesso restrito. Somente administradores.</p>
+<div class="card" id="gate"><h3>Entrar</h3><input id="apass" type="password" class="field" placeholder="Senha do admin"><div class="row"><button class="btn" onclick="tryAdmin()">Desbloquear</button></div></div>
+<div id="apanel" style="display:none">
+<div class="grid3" id="astats"></div>
+<div class="card" style="margin-top:14px"><h3>Assinantes</h3><div id="asubs"></div></div>
+<div class="card" style="margin-top:14px"><h3>Sites criados</h3><div id="asites"></div></div>
+<div class="card" style="margin-top:14px"><h3>Vendas registradas</h3><div id="avendas"></div></div>
+<div class="card" style="margin-top:14px"><h3>Acoes</h3><div class="row"><button class="btn g" onclick="addCred(100)">+100 creditos</button><button class="btn g" onclick="exportar()">Exportar dados</button><button class="btn g" onclick="sairAdmin()">Bloquear</button></div><input id="npass" type="password" class="field" placeholder="Nova senha do admin"><div class="row"><button class="btn g" onclick="trocarSenha()">Trocar senha</button></div></div>
+</div>
+</div></div></div>
+<div id="v-tut" class="view"><div class="sec"><div class="wrap"><h2 class="h2">Do zero a primeira venda.</h2>
+<div class="grid3"><div class="card"><div class="n">1</div><h3>Crie sua conta</h3><p>Demo: voce ja comeca com 100 creditos.</p></div><div class="card"><div class="n">2</div><h3>Busque uma regiao</h3><p>Cidade + ramo no Dashboard.</p></div><div class="card"><div class="n">3</div><h3>Gere, edite e ligue</h3><p>Crie o site, ajuste e ofereca pelo telefone listado.</p></div></div>
+<br><button class="btn" onclick="go('dash')">Comecar agora</button></div></div></div>
+<div id="v-ajuda" class="view"><div class="sec"><div class="wrap" style="max-width:760px">
+<h2 class="h2">Perguntas, respondidas.</h2>
+<div class="faq" id="faq"><button onclick="faqToggle(this)">Preciso saber programar? +</button><div>Nao. A pagina sai pronta e o editor e visual.</div><button onclick="faqToggle(this)">De onde vem os dados? +</button><div>Usamos demonstracao + mapa do Google (gratis, sem chave). Fotos reais de cada empresa exigiriam a API paga do Google, por isso usamos mini-mapas e fotos ilustrativas.</div><button onclick="faqToggle(this)">Como funciona o pagamento? +</button><div>Na pagina Assinar voce escolhe o plano e paga por Pix ou cartao. Na demo a aprovacao e simulada; em producao conectamos Mercado Pago ou Stripe.</div><button onclick="faqToggle(this)">Onde o site fica hospedado? +</button><div>Na demo fica no navegador. Na real: hospedagem incluida, dominio proprio no plano Agencia.</div><button onclick="faqToggle(this)">Como funcionam os creditos? +</button><div>3 por busca, 3 por site, 1 por edicao, 5 oportunidades do dia.</div><button onclick="faqToggle(this)">Posso cancelar? +</button><div>Sim, quando quiser, sem taxa.</div></div></div></div></div>
+<div class="foot"><div class="wrap">© 2026 SiteHunter - Feito para quem vive de vender sites - suporte@sitehunter.com.br</div></div>
+<div class="modal" id="modal"><div class="mbox"><div id="mbody"></div><br><button class="btn g" onclick="document.getElementById('modal').classList.remove('show')">Fechar</button></div></div>
+<div class="modal" id="smodal"><div class="mbox" style="max-width:860px"><div id="sbody"></div><br><button class="btn g" onclick="document.getElementById('smodal').classList.remove('show')">Fechar</button></div></div>
+<script>
+var MEM={};
+function sget(k,fb){try{var v=localStorage.getItem("sh_"+k);if(v!==null)return JSON.parse(v);}catch(e){}return (MEM[k]!==undefined?MEM[k]:fb);}
+function sset(k,v){MEM[k]=v;try{localStorage.setItem("sh_"+k,JSON.stringify(v));}catch(e){}}
+var C=sget("c",100);var SITES=sget("s",[]);var VENDAS=sget("v",[]);var LEADS=[];var SUB=sget("sub",null);var APASS=sget("apass","admin123");
+var PLANOS={"Inicio":{v:119,c:100},"Escala":{v:239,c:250},"Agencia":{v:574,c:600}};
+var NOMES={Padaria:["Padaria Pao Dourado","Padaria do Ze","Pao Quente da Vila","Trigo Real","Estrela do Bairro"],Barbearia:["Corte Fino","Navalha de Ouro","Vintage Barber","Irmaos Santos","Corte e Barba"],Pizzaria:["Forno a Lenha","Bella Massa","Sabor da Vila","Tradicao","Noite Feliz"],"Salao de Beleza":["Studio Bella","Espaco Glam","Beleza Pura","Luz e Corte","Viva Bella"],"Pet Shop":["AuAu Feliz","Pet Carinho","Bicho Solto","Pata de Ouro","Mundo Pet"],Restaurante:["Sabor da Casa","Cantina Central","Fogao Mineiro","Tempero Bom","Casa e Caldo"]};
+var FOTOS=["https://picsum.photos/seed/sh1/800/500?grayscale","https://picsum.photos/seed/sh2/800/500?grayscale","https://picsum.photos/seed/sh3/800/500?grayscale","https://picsum.photos/seed/sh4/800/500?grayscale","https://picsum.photos/seed/sh5/800/500?grayscale"];
+var FAQS=[["Preciso saber programar?","Nao. A pagina sai pronta e o editor e visual."],["De onde vem os dados?","Usamos demonstracao + mapa do Google (gratis, sem chave). Fotos reais de cada empresa exigiriam a API paga do Google, por isso usamos mini-mapas e fotos ilustrativas."],["Como funciona o pagamento?","Na pagina Assinar voce escolhe o plano e paga por Pix ou cartao. Na demo a aprovacao e simulada; em producao conectamos Mercado Pago ou Stripe."],["Onde o site fica hospedado?","Na demo fica no navegador. Na real: hospedagem incluida, dominio proprio no plano Agencia."],["Como funcionam os creditos?","3 por busca, 3 por site, 1 por edicao, 5 oportunidades do dia."],["Posso cancelar?","Sim, quando quiser, sem taxa."]];
+function save(){sset("c",C);sset("s",SITES);sset("v",VENDAS);sset("sub",SUB);document.getElementById("credits").textContent=C;planLine();}
+function planLine(){var e=document.getElementById("planline");if(e)e.innerHTML="Plano atual: <b>"+(SUB&&SUB.status==="ativo"?SUB.plano+" (ativo)":"nenhum - demo gratis")+"</b> - Busca (3) - Site (3) - Edicao (1) - Oportunidades (5).";}
+function go(v){var els=document.querySelectorAll(".view");for(var i=0;i<els.length;i++)els[i].classList.remove("on");document.getElementById("v-"+v).classList.add("on");window.scrollTo(0,0);if(v==="assinar")updAssinar();}
+function gastar(n,l){if(C<n){alert("Sem creditos para "+l+". Assine um plano para recarregar.");return false;}C-=n;save();return true;}
+function mkLeads(cid,ramo){var base=NOMES[ramo]||NOMES.Padaria;return base.map(function(n,i){return{id:i,nome:n,ramo:ramo,cidade:cid,end:"Rua Central, "+(100+i*37)+" - "+cid,tel:"(11) 9 6"+(100+i*137)+"-"+(1000+i*733),nota:(3.9+i*0.2).toFixed(1),av:40+i*67,foto:FOTOS[i%FOTOS.length]};});}
+function renderLeads(){var h="";for(var i=0;i<LEADS.length;i++){var l=LEADS[i];var q=encodeURIComponent(l.end+" Brasil");h+="<div class='lc'><iframe loading='lazy' class='minimap' src='https://www.google.com/maps?q="+q+"&output=embed'></iframe><div class='lb'><b>"+l.nome+"</b><br><small>"+l.nota+" estrelas - "+l.av+" avaliacoes - SEM SITE</small><br><small>"+l.end+" - "+l.tel+"</small><div class='row'><button class='btn' style='padding:8px 14px' onclick='ficha("+i+")'>Abrir ficha</button></div></div></div>";}document.getElementById("leads").innerHTML=h||"<p style='color:#737373'>Busque uma cidade para ver os comercios sem site.</p>";}
+function buscar(){if(!gastar(3,"busca"))return;LEADS=mkLeads(document.getElementById("cidade").value,document.getElementById("ramo").value);renderLeads();}
+function buscarHome(){document.getElementById("cidade").value=document.getElementById("h-cidade").value;document.getElementById("ramo").value=document.getElementById("h-ramo").value;go("dash");buscar();}
+function oportunidades(){if(!gastar(5,"oportunidades"))return;LEADS=mkLeads(document.getElementById("cidade").value,document.getElementById("ramo").value).slice(0,2);renderLeads();alert("Oportunidades do dia liberadas");}
+function ficha(i){var l=LEADS[i];var q=encodeURIComponent(l.end+" Brasil");var qs=encodeURIComponent(l.nome+" "+l.end);document.getElementById("mbody").innerHTML="<h3>"+l.nome+"</h3><p style='color:#525252;font-size:14px'>"+l.ramo+" - "+l.cidade+" - "+l.nota+" estrelas ("+l.av+")<br>"+l.end+"<br><b>"+l.tel+"</b></p><img src='"+l.foto+"' style='width:100%;border-radius:10px;filter:grayscale(1);margin:10px 0'><iframe class='mapframe' src='https://www.google.com/maps?q="+q+"&output=embed'></iframe><p style='font-size:13px;margin-top:6px'><a target='_blank' href='https://www.google.com/maps/search/"+qs+"'>Abrir no Google Maps</a></p><div class='msg'><b>WhatsApp:</b><br>Ola! Sou da SiteHunter. Vi a "+l.nome+" no Google ("+l.nota+" estrelas). Montei o site de voces pronto com fotos e WhatsApp. Posso mandar o link?</div><div class='msg'><b>Ligacao:</b><br>Oi, aqui e da SiteHunter. Achei a "+l.nome+" sem site e deixei a pagina pronta. Mando no WhatsApp agora? Se gostar, deixo no ar hoje por R$ 497.</div><div class='row'><button class='btn' onclick='criarSite("+i+")'>Criar site (3 creditos)</button></div>";document.getElementById("modal").classList.add("show");}
+function criarSite(i){if(!gastar(3,"site"))return;var l=LEADS[i];var s={id:Date.now(),titulo:l.nome,sub:l.ramo+" em "+l.cidade+" - "+l.nota+" estrelas",tel:l.tel,end:l.end,foto:l.foto,tema:"preto"};SITES.push(s);save();renderSites();abrirSite(s.id);}
+function renderSites(){var h="";for(var i=0;i<SITES.length;i++){h+="<p style='font-size:14px'><b>"+SITES[i].titulo+"</b><br><a href='#' onclick='abrirSite("+SITES[i].id+")'>Abrir / editar</a></p>";}document.getElementById("sites").innerHTML=h||"<p style='color:#737373;font-size:14px'>Nenhum site ainda.</p>";}
+function abrirSite(id){var s=null;for(var i=0;i<SITES.length;i++)if(SITES[i].id===id)s=SITES[i];var bg=s.tema==="branco"?"#fff":(s.tema==="cinza"?"#f4f4f4":"#0a0a0a");var fg=(s.tema==="branco"||s.tema==="cinza")?"#000":"#fff";document.getElementById("sbody").innerHTML="<div class='row'><input id='e-t' value='"+s.titulo+"' style='flex:1;border:1px solid #e5e5e5;border-radius:8px;padding:9px'><select id='e-tema' onchange='trocarTema("+s.id+",this.value)'><option value='preto'>Preto</option><option value='branco'>Branco</option><option value='cinza'>Cinza</option></select><button class='btn' onclick='salvarSite("+s.id+")'>Salvar (1 credito)</button></div><textarea id='e-s' style='margin-top:8px'>"+s.sub+"</textarea><div style='background:"+bg+";color:"+fg+";border-radius:12px;overflow:hidden;margin-top:12px;border:1px solid #000'><img src='"+s.foto+"' style='width:100%;height:220px;object-fit:cover;filter:grayscale(1)'><div style='padding:24px'><h2>"+s.titulo+"</h2><p>"+s.sub+"</p><p style='margin-top:8px'>"+s.end+" - "+s.tel+"</p><br><span style='border:1px solid "+fg+";border-radius:99px;padding:10px 20px'>Chamar no WhatsApp</span> <span style='font-size:12px'>sitehunter.com.br/p/"+s.id+"</span></div></div>";document.getElementById("e-tema").value=s.tema;document.getElementById("smodal").classList.add("show");}
+function trocarTema(id,v){for(var i=0;i<SITES.length;i++)if(SITES[i].id===id)SITES[i].tema=v;save();abrirSite(id);}
+function salvarSite(id){if(!gastar(1,"edicao"))return;for(var i=0;i<SITES.length;i++)if(SITES[i].id===id){SITES[i].titulo=document.getElementById("e-t").value;SITES[i].sub=document.getElementById("e-s").value;}save();renderSites();abrirSite(id);}
+function addVenda(){var d=document.getElementById("v-desc").value||"Site vendido";var v=parseFloat(document.getElementById("v-valor").value||"0");VENDAS.push({d:d,v:v});save();renderVendas();}
+function renderVendas(){var t=0;var h="<table><tr><th>Descricao</th><th>Valor</th></tr>";for(var i=0;i<VENDAS.length;i++){t+=VENDAS[i].v;h+="<tr><td>"+VENDAS[i].d+"</td><td>R$ "+VENDAS[i].v+"</td></tr>";}h+="</table><p><b>Total: R$ "+t+"</b></p>";document.getElementById("vendas").innerHTML=h;}
+function escolherPlano(p){var s=document.getElementById("p-plano");for(var i=0;i<s.options.length;i++)if(s.options[i].text.indexOf(p)===0)s.selectedIndex=i;go("assinar");}
+function updAssinar(){var s=document.getElementById("p-plano");var nome=s.options[s.selectedIndex].text.split(" - ")[0];var v=PLANOS[nome].v;document.getElementById("p-cartao").style.display=(document.getElementById("p-metodo").value==="Pix")?"none":"block";var b="";if(SUB&&SUB.status==="ativo"){b="<h3>Assinatura ativa</h3><p>Plano <b>"+SUB.plano+"</b> - R$ "+SUB.v+"/mes<br>"+SUB.nome+" ("+SUB.email+")<br>Metodo: "+SUB.metodo+"</p><div class='row'><button class='btn g' onclick='cancelarSub()'>Cancelar assinatura</button></div>";}else{b="<h3>Sem assinatura</h3><p>Voce esta na demo gratis (100 creditos). Assine para recarregar: "+nome+" = <b>R$ "+v+"/mes</b> + "+PLANOS[nome].c+" creditos.</p>";}document.getElementById("subbox").innerHTML=b;}
+function pagar(){var s=document.getElementById("p-plano");var nome=s.options[s.selectedIndex].text.split(" - ")[0];var n=document.getElementById("p-nome").value.trim();var e=document.getElementById("p-email").value.trim();var m=document.getElementById("p-metodo").value;if(!n||e.indexOf("@")===-1){alert("Preencha nome e e-mail valido.");return;}if(m!=="Pix"){var cc=document.getElementById("p-cartao").value.replace(/\D/g,"");if(cc.length<12){alert("Numero do cartao invalido (demo).");return;}}SUB={plano:nome,v:PLANOS[nome].v,nome:n,email:e,metodo:m,data:new Date().toLocaleString(),status:"ativo"};C=PLANOS[nome].c;save();updAssinar();document.getElementById("receipt").innerHTML="<div class='receipt' style='margin-top:14px'><h3>Pagamento aprovado (demo)</h3><p>Plano "+nome+" - R$ "+PLANOS[nome].v+"/mes<br>"+n+" - "+e+"<br>Metodo: "+m+"<br>Creditos recarregados: "+PLANOS[nome].c+"</p><p style='font-size:12px;color:#a3a3a3'>Producao: aqui entra o checkout do Mercado Pago ou Stripe.</p></div>";}
+function cancelarSub(){if(SUB)SUB.status="inativo";save();updAssinar();document.getElementById("receipt").innerHTML="";}
+function tryAdmin(){if(document.getElementById("apass").value===APASS){document.getElementById("gate").style.display="none";document.getElementById("apanel").style.display="block";renderAdmin();}else alert("Senha incorreta.");}
+function sairAdmin(){document.getElementById("apanel").style.display="none";document.getElementById("gate").style.display="block";document.getElementById("apass").value="";}
+function trocarSenha(){var n=document.getElementById("npass").value.trim();if(n.length<4){alert("Senha muito curta.");return;}APASS=n;sset("apass",n);document.getElementById("npass").value="";alert("Senha do admin atualizada.");}
+function addCred(n){C+=n;save();renderAdmin();}
+function exportar(){var d={assinatura:SUB,sites:SITES,vendas:VENDAS,creditos:C};var b=new Blob([JSON.stringify(d,null,1)],{type:"application/json"});var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="sitehunter-dados.json";document.body.appendChild(a);a.click();a.remove();}
+function renderAdmin(){var subs=[{n:"Marcos L.",e:"marcos@agencia.com",p:"Escala",v:239,s:"ativo"},{n:"Ana P.",e:"ana@studio.com",p:"Inicio",v:119,s:"ativo"},{n:"Rafa T.",e:"rafa@grupo.com",p:"Agencia",v:574,s:"ativo"},{n:"Julia M.",e:"ju@live.com",p:"Inicio",v:119,s:"inativo"}];if(SUB&&SUB.status==="ativo")subs.push({n:SUB.nome,e:SUB.email,p:SUB.plano,v:SUB.v,s:"ativo"});var mrr=0;for(var i=0;i<subs.length;i++)if(subs[i].s==="ativo")mrr+=subs[i].v;var tv=0;for(var k=0;k<VENDAS.length;k++)tv+=VENDAS[k].v;document.getElementById("astats").innerHTML="<div class='card'><h3>"+subs.filter(function(x){return x.s==='ativo';}).length+"</h3><p>assinantes ativos</p></div><div class='card'><h3>R$ "+mrr+"</h3><p>MRR (receita mensal)</p></div><div class='card'><h3>R$ "+tv+"</h3><p>vendas dos usuarios</p></div>";var h="<table><tr><th>Nome</th><th>Plano</th><th>Valor</th><th>Status</th></tr>";for(var j=0;j<subs.length;j++)h+="<tr><td>"+subs[j].n+"<br><small>"+subs[j].e+"</small></td><td>"+subs[j].p+"</td><td>R$ "+subs[j].v+"</td><td>"+subs[j].s+"</td></tr>";document.getElementById("asubs").innerHTML=h+"</table>";var s2="";for(var a2=0;a2<SITES.length;a2++)s2+="<p style='font-size:14px'><b>"+SITES[a2].titulo+"</b> - "+SITES[a2].end+"</p>";document.getElementById("asites").innerHTML=s2||"<p style='color:#737373;font-size:14px'>Nenhum site criado ainda.</p>";var v2="<table><tr><th>Descricao</th><th>Valor</th></tr>";for(var v3=0;v3<VENDAS.length;v3++)v2+="<tr><td>"+VENDAS[v3].d+"</td><td>R$ "+VENDAS[v3].v+"</td></tr>";document.getElementById("avendas").innerHTML=v2+"</table>";}
+function renderFaq(){var h="";for(var i=0;i<FAQS.length;i++){h+="<button onclick='faqToggle(this)'>"+FAQS[i][0]+" +</button><div>"+FAQS[i][1]+"</div>";}document.getElementById("faq").innerHTML=h;}
+function faqToggle(b){var d=b.nextElementSibling;d.style.display=(d.style.display==="block"?"none":"block");}
+save();renderLeads();renderSites();renderVendas();renderFaq();
+</script><a href="blob:null/66193955-89a0-42a7-b418-8979c83969ff" download="sitehunter.html"></a></body></html>
